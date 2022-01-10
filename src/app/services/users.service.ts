@@ -3,12 +3,8 @@ import { UsersUpdateDto } from "@app/dto/users/users.update.dto"
 import usersRepository from "@app/repositories/users.repository"
 
 const create = async (usersDto: UsersCreateDto) => {
-    try {
-        const users = usersRepository.save(usersDto)
-        return users
-    } catch (error: any) {
-
-    }
+    const users = usersRepository.save(usersDto)
+    return users
 }
 
 const findAll = async () => {

@@ -18,6 +18,7 @@
       "@db/*":["./db/*"],
       "@controllers/*":["./app/controllers/*"],
       "@services/*":["./app/services/*"],
+      "@validators":["./app/validators/*"],
       "@middlewares/*":["./app/middlewares/*"],
       "@repositories/*":["./app/repositories/*"],
       "@entity/*":["./app/entities/*"],
