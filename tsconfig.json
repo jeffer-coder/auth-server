@@ -22,8 +22,8 @@
       "@middlewares/*":["./app/middlewares/*"],
       "@repositories/*":["./app/repositories/*"],
       "@entity/*":["./app/entities/*"],
-      "@helpers":["./app/helpers/*"],
-      "@utils":["./app/utils/*"]
+      "@helpers/*":["./app/helpers/*"],
+      "@utils/*":["./app/utils/*"]
     }
   }
 }

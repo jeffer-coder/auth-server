@@ -1,13 +1,13 @@
 import usersService from "@app/services/users.service";
 import { NextFunction, Request, Response } from "express";
 
-const store = async (req: Request, res: Response, next: NextFunction) => {
+const store = async (req: Request, res: Response,next: NextFunction) => {
     try {
         const body = req.body
         const users = await usersService.create(body)
         res.status(201).send(users)
     } catch (err:any) {
-       res.status(400).send({msg:err.message})
+       next(err)
     }
 }
 
